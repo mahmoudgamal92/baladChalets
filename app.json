@@ -1,23 +1,23 @@
 {
   "expo": {
-    "name": "Fast Reservation",
-    "slug": "fast_reserv",
-    "version": "1.0.5",
+    "name": "مزارع و شاليهات بلد",
+    "slug": "baladChalets",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/adaptive-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#FFF"
+      "backgroundColor": "#51672D"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "buildNumber": "5",
+      "buildNumber": "2",
       "supportsTablet": false,
-      "bundleIdentifier": "com.quickbookingiraq.bluemedia",
+      "bundleIdentifier": "com.baladChalets.fastreservation",
       "infoPlist": {
         "NSAppTransportSecurity": {
           "NSAllowsArbitraryLoads": true,
@@ -43,12 +43,12 @@
       }
     },
     "android": {
-      "versionCode": "5",
+      "versionCode": 4,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#34ace0"
+        "backgroundColor": "#51672D"
       },
-      "package": "com.seyahaa.seyahaa"
+      "package": "com.baladChalets.fastreservation"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -56,9 +56,10 @@
     "plugins": [
       "expo-font"
     ],
+    "owner": "mahmoud2391997",
     "extra": {
       "eas": {
-        "projectId": "0a506747-aa12-4539-a6e8-dd6f9aee7010"
+        "projectId": "6aee05b9-1fb8-4673-80c0-109e4f2a70c6"
       }
     }
   }

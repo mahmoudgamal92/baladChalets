@@ -37,8 +37,7 @@ const ArrivalTypes = [
     }
 ];
 
-
-const hotel_cities = [
+const cities = [
     {
         "id": 1,
         "arabicName": "أربيل"
@@ -64,28 +63,68 @@ const hotel_cities = [
         "arabicName": "دهوك"
     },
     {
+        "id": 13,
+        "arabicName": "الموصل"
+    },
+    {
+        "id": 15,
+        "arabicName": "الكاظمية"
+    },
+    {
         "id": 8,
         "arabicName": "سليمانية"
-    }
-]
-
-
-const cities = [
-    {
-        "id": 4,
-        "arabicName": "بلد"
     },
     {
-        "id": 5,
-        "arabicName": "كربلاء"
+        "id": 9,
+        "arabicName": "النجف"
     },
     {
-        "id": 6,
-        "arabicName": "الدجيل"
+        "id": 16,
+        "arabicName": "العمارة (ميسان)"
     },
     {
-        "id": 3,
-        "arabicName": "بغداد"
+        "id": 17,
+        "arabicName": "الناصرية"
+    },
+    {
+        "id": 18,
+        "arabicName": "كركوك"
+    },
+    {
+        "id": 23,
+        "arabicName": "البصرة"
+    },
+    {
+        "id": 24,
+        "arabicName": "الحلة (بابل)"
+    },
+    {
+        "id": 25,
+        "arabicName": "الكوت (واسط) "
+    },
+    {
+        "id": 26,
+        "arabicName": "الديوانية "
+    },
+    {
+        "id": 27,
+        "arabicName": "السماوة "
+    },
+    {
+        "id": 28,
+        "arabicName": "ديالى"
+    },
+    {
+        "id": 29,
+        "arabicName": "صلاح الدين"
+    },
+    {
+        "id": 30,
+        "arabicName": "الأنبار"
+    },
+    {
+        "id": 31,
+        "arabicName": "الكوفة"
     }
 ]
 
@@ -103,4 +142,4 @@ const north_cities = [
         "arabicName": "سليمانية"
     }
 ]
-export { api, offerTypes, ArrivalTypes, cities, north_cities, hotel_cities };
+export { api, offerTypes, ArrivalTypes, cities, north_cities };

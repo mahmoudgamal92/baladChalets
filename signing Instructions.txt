@@ -4,7 +4,7 @@ this is the command used to create the keystore
 keytool -genkeypair -v -keystore new-upload-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload-key -storepass newstorepass -keypass newkeypass
 
 2- List the entries in the existing keystore to find the correct alias:
-- keytool -list -v -keystore existing-keystore.jks
+- keytool -list -v -keystore new-upload-key.jks
 
 3- export the certificate to upload to google play :
 

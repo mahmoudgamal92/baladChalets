@@ -1,34 +1,18 @@
 {
   "cli": {
-    "version": ">= 7.1.3"
+    "version": ">= 10.2.2"
   },
   "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
     "preview": {
-      "android": {
-        "buildType": "app-bundle"
-      }
+      "distribution": "internal"
     },
-    "preview2": {
-      "android": {
-        "gradleCommand": ":app:bundleRelease"
-      }
-    },
-    "preview3": {
-      "developmentClient": true
-    },
-    "production": {
-      "android": {
-        "buildType": "app-bundle"
-      }
-    }
+    "production": {}
   },
   "submit": {
-    "production": {
-      "ios": {
-        "appleId": "alaaautodesk2021@gmail.com",
-        "ascAppId": "6508169320",
-        "appleTeamId": "GDX3F45RG7"
-      }
-    }
+    "production": {}
   }
 }
