@@ -1,0 +1,40 @@
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: { jsx: true },
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: true,
+    tsconfigRootDir: __dirname,
+  },
+  plugins: ["@typescript-eslint", "react", "react-native", "react-hooks"],
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+  ],
+  env: {
+    "react-native/react-native": true,
+  },
+  settings: {
+    react: { version: "detect" },
+  },
+  rules: {
+    "@typescript-eslint/no-unsafe-assignment": "warn",
+    "@typescript-eslint/no-unsafe-member-access": "warn",
+    "@typescript-eslint/no-unsafe-argument": "warn",
+    "@typescript-eslint/no-unsafe-call": "warn",
+    "@typescript-eslint/no-unsafe-return": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-require-imports": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "react-native/no-unused-styles": "warn",
+    "react-native/no-inline-styles": "warn",
+    "react-native/no-color-literals": "off",
+  },
+  ignorePatterns: ["node_modules/", ".expo/", "dist/"],
+};

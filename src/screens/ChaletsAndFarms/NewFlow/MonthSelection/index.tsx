@@ -35,7 +35,7 @@ export const MonthSelection = ({ route, navigation }: Props) => {
     };
 
     const renderMonth = ({ item }: { item: { name: string; startDate: string; endDate: string } }) => (
-        <TouchableOpacity onPress={() => _GetAvaliableOffersByDate(item)} style={styles.monthItem}>
+        <TouchableOpacity onPress={() => { void _GetAvaliableOffersByDate(item); }} style={styles.monthItem}>
             <View style={styles.monthButton}>
                 <Entypo name="calendar" size={24} color="#FFF" style={{ marginHorizontal: 5 }} />
                 <Text style={styles.monthButtonText}>{item.name}</Text>

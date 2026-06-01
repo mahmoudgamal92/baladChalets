@@ -97,7 +97,7 @@ export const NewList = ({ route, navigation }: Props) => {
                                 <View style={{ width: "50%", alignItems: 'center' }}>
                                     <Text style={{ fontFamily: "Bold", textAlign: 'right' }}>{item.chaletName}</Text>
                                     {item.videoUrl !== null &&
-                                        <TouchableOpacity onPress={() => Linking.openURL(item.videoUrl)} style={{ backgroundColor: 'red', padding: 5, flexDirection: 'row', borderRadius: 10 }}>
+                                        <TouchableOpacity onPress={() => { void Linking.openURL(item.videoUrl); }} style={{ backgroundColor: 'red', padding: 5, flexDirection: 'row', borderRadius: 10 }}>
                                             <AntDesign name="youtube" size={24} color="#FFF" />
                                             <Text style={{ fontFamily: "Bold", textAlign: 'right', color: '#FFF' }}>
                                                 {t("common.showVideo")}
@@ -189,7 +189,7 @@ export const NewList = ({ route, navigation }: Props) => {
                                 </TouchableOpacity>
 
                                 <TouchableOpacity
-                                    onPress={() => Linking.openURL(item.address)}
+                                    onPress={() => { void Linking.openURL(item.address); }}
                                     style={{ backgroundColor: "#00AA76", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: 10, paddingVertical: 5, paddingHorizontal: 10, marginTop: 10, height: 40 }}>
                                     <Text style={{ fontFamily: "Bold", color: "#FFF", fontSize: 10 }}>
                                         {t("common.location")}

@@ -35,7 +35,7 @@ export const PreOrder = ({ route, navigation }: Props) => {
             .replace(/[^\d]/g, "");
     }
 
-    const _handleArrivals = async () => {
+    const _handleArrivals = () => {
         const max_coming = parseInt(item.adultsNumber) + parseInt(item.personsNumber);
         if (adults > parseInt(item.adultsNumber)) {
             if (adults > max_coming) {

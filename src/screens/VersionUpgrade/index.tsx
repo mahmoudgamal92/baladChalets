@@ -11,9 +11,9 @@ export default function VersionUpgrade({ navigation }: Props) {
 
     const navigateToApp = () => {
         if (Platform.OS === 'android') {
-            Linking.openURL('https://play.google.com/store/apps/details?id=com.seyahaa.seyahaa');
+            void Linking.openURL('https://play.google.com/store/apps/details?id=com.seyahaa.seyahaa');
         } else if (Platform.OS === 'ios' || Platform.OS === 'macos') {
-            Linking.openURL('https://apps.apple.com/us/app/id6508169320');
+            void Linking.openURL('https://apps.apple.com/us/app/id6508169320');
         }
     };
 

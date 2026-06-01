@@ -114,7 +114,7 @@ export const ConfirmOrder = ({ route, navigation }: Props) => {
                         </View>
                     ))}
                     <TouchableOpacity
-                        onPress={() => _placeOrder()}
+                        onPress={() => { void _placeOrder(); }}
                         style={{ width: "100%", backgroundColor: "#51672D", padding: 10, borderRadius: 10, marginBottom: 50, marginTop: 20 }}>
                         {loading
                             ? <ActivityIndicator size="small" color="#FFF" />

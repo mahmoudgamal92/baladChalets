@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "paths": {
-      "@components": ["src/components"],
-      "@screens": ["src/screens/ChaletsAndFarms"],
+      "@components": ["./src/components"],
+      "@screens": ["./src/screens/ChaletsAndFarms"],
     }
   },
   "extends": "expo/tsconfig.base"

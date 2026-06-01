@@ -40,7 +40,7 @@ export default function HomePage({ navigation }: Props) {
     const [IsOneDay, setIsOneDay] = useState(false);
 
     useEffect(() => {
-        _getInfo();
+        void _getInfo();
     }, []);
 
     const _getChalestByCity = async (city: string) => {
@@ -67,7 +67,7 @@ export default function HomePage({ navigation }: Props) {
         setEndDate(`${month}-${day}-${year}`);
     };
 
-    const handleStartDateChange = async (year: string, month: string, day: string) => {
+    const handleStartDateChange = (year: string, month: string, day: string) => {
         setEndDate("");
         setStartDate(`${month}-${day}-${year}`);
     };
@@ -158,7 +158,7 @@ export default function HomePage({ navigation }: Props) {
                     </View>
 
                     <TouchableOpacity
-                        onPress={() => Linking.openURL('https://app.alhajz-alsarea.com/privacy.html')}
+                        onPress={() => { void Linking.openURL('https://app.alhajz-alsarea.com/privacy.html'); }}
                         style={{ width: "20%", justifyContent: "center", alignItems: "flex-start" }}>
                         <Text style={{ fontFamily: "Bold", fontSize: 10, color: "#FFF" }}>privacy policy</Text>
                     </TouchableOpacity>
@@ -228,14 +228,14 @@ export default function HomePage({ navigation }: Props) {
                             )}
                         </View>
 
-                        <TouchableOpacity onPress={() => _applySearch()} style={{ width: "100%", backgroundColor: "#51672D", padding: 10, borderRadius: 10, marginVertical: 5 }}>
+                        <TouchableOpacity onPress={() => { void _applySearch(); }} style={{ width: "100%", backgroundColor: "#51672D", padding: 10, borderRadius: 10, marginVertical: 5 }}>
                             {loading
                                 ? <ActivityIndicator size={40} color={"#FFF"} />
                                 : <Text style={{ textAlign: "center", fontFamily: "Bold", color: "#FFF" }}>{t('home.searchButton')}</Text>
                             }
                         </TouchableOpacity>
 
-                        <TouchableOpacity onPress={() => _getChalestByCity('4')} style={{ width: "100%", backgroundColor: "red", padding: 10, borderRadius: 10 }}>
+                        <TouchableOpacity onPress={() => { void _getChalestByCity('4'); }} style={{ width: "100%", backgroundColor: "red", padding: 10, borderRadius: 10 }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', height: 40 }}>
                                 <Text style={{ textAlign: "center", fontFamily: "Bold", color: "#FFF", fontSize: 12, paddingHorizontal: 10 }}>
                                     {t('home.allFarmsButton')}

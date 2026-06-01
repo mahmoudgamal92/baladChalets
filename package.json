@@ -6,7 +6,9 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"App.tsx\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" \"App.tsx\" --fix"
   },
   "resolutions": {
     "wrap-ansi": "7.0.0",
@@ -55,6 +57,12 @@
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@types/react": "~19.2.10",
+    "@typescript-eslint/eslint-plugin": "7",
+    "@typescript-eslint/parser": "7",
+    "eslint": "8",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "4",
+    "eslint-plugin-react-native": "^5.0.0",
     "typescript": "~5.9.2"
   },
   "private": true

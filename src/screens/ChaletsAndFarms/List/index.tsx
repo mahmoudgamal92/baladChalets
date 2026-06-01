@@ -139,7 +139,7 @@ export const List = ({ route, navigation }: Props) => {
                             <View style={{ width: "50%", alignItems: 'flex-end' }}>
                                 <Text style={{ fontFamily: "Bold", textAlign: 'right' }}>{item.chaletName}</Text>
                                 {item.videoUrl !== null && (
-                                    <TouchableOpacity onPress={() => Linking.openURL(item.videoUrl)} style={{ backgroundColor: 'red', padding: 5, flexDirection: 'row', borderRadius: 10, alignItems: 'center' }}>
+                                    <TouchableOpacity onPress={() => { void Linking.openURL(item.videoUrl); }} style={{ backgroundColor: 'red', padding: 5, flexDirection: 'row', borderRadius: 10, alignItems: 'center' }}>
                                         <AntDesign name="youtube" size={20} color="#FFF" />
                                         <Text style={{ fontFamily: "Bold", fontSize: 12, textAlign: 'right', color: '#FFF', padding: 2 }}>
                                             {t("common.showVideo")}
@@ -209,7 +209,7 @@ export const List = ({ route, navigation }: Props) => {
                             <TouchableOpacity onPress={() => { setChaletDescription(item.chaletDescription); setDetailsModalVisible(true); }} style={{ backgroundColor: "#51672D", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: 10, paddingVertical: 5, paddingHorizontal: 10, marginTop: 10, height: 40 }}>
                                 <Text style={{ fontFamily: "Bold", color: "#FFF" }}>{t("common.details")}</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={() => Linking.openURL(item.address)} style={{ backgroundColor: "#00AA76", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: 10, paddingVertical: 5, paddingHorizontal: 20, marginTop: 10, height: 40 }}>
+                            <TouchableOpacity onPress={() => { void Linking.openURL(item.address); }} style={{ backgroundColor: "#00AA76", flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: 10, paddingVertical: 5, paddingHorizontal: 20, marginTop: 10, height: 40 }}>
                                 <Text style={{ fontFamily: "Bold", color: "#FFF" }}>{t("common.location")}</Text>
                                 <EvilIcons name="location" size={24} color="#FFF" />
                             </TouchableOpacity>

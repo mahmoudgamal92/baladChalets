@@ -14,7 +14,7 @@ export default function App() {
   if (__DEV__) {
     require("./ReactotronConfig");
   }
-  let [fontsLoaded] = useFonts({
+  const [fontsLoaded] = useFonts({
     Bold: require("./src/assets/fonts/Bold.ttf"),
     Light: require("./src/assets/fonts/Light.ttf"),
     Regular: require("./src/assets/fonts/Regular.ttf"),

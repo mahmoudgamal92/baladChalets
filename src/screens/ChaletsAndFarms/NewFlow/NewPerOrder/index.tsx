@@ -37,7 +37,7 @@ export const NewPerOrder = ({ route, navigation }: Props) => {
     return strNum;
   }
 
-  const _handleArrivals = async () => {
+  const _handleArrivals = () => {
     const max_coming =
       parseInt(offer.adultsNumber) + parseInt(chalet.personsNumber);
 
