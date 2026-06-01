@@ -54,7 +54,10 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      "@react-native-community/datetimepicker",
+      "expo-build-properties",
+      "expo-image"
     ],
     "owner": "mahmoud2391997",
     "extra": {

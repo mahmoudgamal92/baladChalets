@@ -1,0 +1,128 @@
+{
+  "common": {
+    "available": "يوجد",
+    "notAvailable": "لا يوجد",
+    "errorOrder": "حدث خطأ أثناء إضافة الطلب.",
+    "sendingRequest": "جار إرسال طلبك الرجاء الإنتظار لحين الإكتمال ...",
+    "loadingData": "جاري التحميل ..",
+    "showVideo": "عرض الفيديو",
+    "showPhotos": "عرض الصور",
+    "searchResults": "نتائج البحث",
+    "location": "اللوكيشن",
+    "details": "التفاصيل"
+  },
+  "amenities": {
+    "additionalPersons": "الأشخاص الإضافيين",
+    "additionalPersonPrice": "السعر للشخص الإضافي",
+    "roomsCount": "عدد الغرف",
+    "kidsToys": "ألعاب أطفال",
+    "bigPool": "مسبح كبير",
+    "deposit": "فيشة + منضدة",
+    "hotPool": "مسبح حار",
+    "smallPool": "مسبح صغير",
+    "billiards": "بلياردو"
+  },
+  "orderForm": {
+    "title": "تأكيد الحجز",
+    "enterInfo": "أدخل المعلومات التالية",
+    "fullNameLabel": "الأسم ثلاثي",
+    "fullNamePlaceholder": "أدخل الأسم ثلاثي",
+    "phoneLabel": "رقم الموبايل",
+    "phonePlaceholder": "أدخل رقم الهاتف",
+    "comingPeopleLabel": "الأشخاص القادمون",
+    "comingPeoplePlaceholder": " القادمون",
+    "personCountLabel": "عدد الأشخاص : من سن {{age}} سنه",
+    "personCountPlaceholder": "أدخل عدد الأشخاص",
+    "additionalPersonsLabel": "عدد الأشخاص الإضافيين (تلقائي)",
+    "continueButton": "متابعة",
+    "errorFillAll": "لابد من إكمال جميع البيانات",
+    "errorInvalidPhone": "الرقم المدخل غير صحيح",
+    "maxPersonsAlert": "الحد الأقصي لعدد القادمون : {{max}}"
+  },
+  "orderDetails": {
+    "title": "تفاصيل الحجز",
+    "sectionTitle": "تفاصيل الحجز",
+    "ownerLabel": "صاحب الطلب",
+    "phoneLabel": "رقم الموبايل",
+    "chaletLabel": "منتجع أو شالية",
+    "comingPeopleLabel": "القادمون",
+    "arrivalDateLabel": "تاريخ الوصول :",
+    "departureDateLabel": "تاريخ المغادرة :",
+    "adultsCountLabel": "عدد البالغين",
+    "additionalPersonsLabel": "عدد الأشخاص الإضافيين",
+    "additionalPersonPriceLabel": "سعر الشخص الإضافي :",
+    "totalAmountLabel": "المبلغ الإجمالي :",
+    "totalAmount": "{{amount}} د.ع",
+    "sendRequestButton": "أضغط هنا لإرسال الطلب",
+    "successOrder": "تم إضافة طلبك بنجاح",
+    "successOrderSent": " تم إرسال طلبك وسيتم التواصل معك بأقرب وقت"
+  },
+  "splash": {
+    "welcome": "هلا فيك بتطبيق مزارع و شاليهات بلد  👋👋",
+    "loading": "الرجاء الإنتظار قليلا"
+  },
+  "versionUpgrade": {
+    "welcome": "هلا فيك بتطبيق مزارع و شاليهات بلد   👋👋",
+    "attention": "الرجاء الإنتباه",
+    "newVersion": "لقد تم رفع إصدار جديد من تطبيق الحجز السريع , الرجاء تحديث التطبيق من المتجر",
+    "updateButton": "إضغط هنا للتحديث"
+  },
+  "home": {
+    "welcome": "أهلا بيكم في تطبيق مزارع و شاليهات بلد",
+    "inquiry": "للإسنفسار + واتساب",
+    "firstStep": "أول شئ : ",
+    "selectShift": "تختار شيفت أو يومي",
+    "arrivalDateLabel": "تاني شئ تختار : ",
+    "arrivalDateTitle": "تاريخ الوصول ",
+    "departureDateLabel": "رابع شئ تختار : ",
+    "departureDateTitle": "تاريخ المغادرة ",
+    "searchButton": "إضغط هنا للبحث",
+    "allFarmsButton": "أو أضغط هنا لمشاهدة كل المزارع وكل الحجوزات المتوفرة",
+    "noAvailableChalets": "لايوجد شاليهات متاحة حاليا",
+    "noOffersInCity": "لا توجد عروض في هذه المدينه",
+    "noOffersInDate": " لا توجد عروض في هذا التاريخ",
+    "fillDataCorrectly": "لابد من إكمال البيانات بشكل صحيح",
+    "departureMustBeAfterArrival": "تاريخ المغادرة لابد أن يكون أكبر من تاريخ الوصول"
+  },
+  "monthSelection": {
+    "title": "اختيار شهر",
+    "warning": "* لمعرفه الحجوزات المتوفره يجب عليك اختيار شهر اولا :",
+    "month": "الشهر {{month}} - {{year}}",
+    "noAvailableDates": "لا توجد اي مواعيد متاحه للحجز في هذا الشهر"
+  },
+  "offers": {
+    "sendRequest": "أرسل طلب"
+  },
+  "list": {
+    "searchPlaceholder": "البحث باسم المزرعة",
+    "sortHighestPrice": "الأعلي سعرا",
+    "sortLowestPrice": "الأقل سعرا",
+    "photos": "الصور",
+    "sendRequest": "إرسل طلب",
+    "ageCounting": "الشخص المحسوب من: {{age}} سنة",
+    "priceUpTo": "السعر لحد {{count}} شخص :",
+    "price": "{{price}} الف",
+    "bookingType": "نوع الحجز : {{type}}",
+    "paymentMethod": "الدفع عن طريق {{method}}",
+    "morningToEvening": "من: {{from}} صباحا إلي : {{to}} مساءا ",
+    "eveningToMorning": "من: {{from}} مساءا   إلي : {{to}} صباحا ",
+    "morningToMorning": "من: {{from}} صباحا إلي : {{to}} صباحا "
+  },
+  "newList": {
+    "searchPlaceholder": "البحث باسم المزرعه",
+    "allBookings": "كل الحجوزات المتوفرة",
+    "detailsAndTimes": "التفاصيل والأوقات",
+    "ageCounting": "الشخص المحسوب من: {{age}} سنه",
+    "priceUpTo": "السعر لحد {{count}} شخص",
+    "paymentMethod": "الدفع عن طريق {{method}}"
+  },
+  "confirmOrder": {
+    "chaletPriceLabel": "سعر الشالية أو المنتجع",
+    "daysCountLabel": "عدد الأيام",
+    "days": "{{count}} يوم"
+  },
+  "newConfirmOrder": {
+    "chaletPriceLabel": "السعر",
+    "bookingTypeLabel": "نوع الحجز"
+  }
+}

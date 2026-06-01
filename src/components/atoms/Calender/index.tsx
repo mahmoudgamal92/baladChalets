@@ -4,11 +4,19 @@ import {
     Text,
     View
 } from "react-native";
-import { days, months, year } from "../../const/source";
+import { days, months, year } from "../../../const/source";
 import { Dropdown } from "react-native-element-dropdown";
-import { styles } from "../../theme/style";
+import { styles } from "../../../theme/style";
 
-export const Calender = ({ label, title, onDateChange, plus, dropdownPosition }) => {
+type Props = {
+    label: string;
+    title: string;
+    onDateChange: (year: string, month: string, day: string) => void;
+    plus: number;
+    dropdownPosition?: "auto" | "top" | "bottom";
+};
+
+export const Calender = ({ label, title, onDateChange, plus, dropdownPosition }: Props) => {
 
 
     const current_year = new Date().getFullYear().toString();
@@ -21,13 +29,13 @@ export const Calender = ({ label, title, onDateChange, plus, dropdownPosition })
 
 
 
-    const handleMonthChange = (month) => {
+    const handleMonthChange = (month: string) => {
         setSelectedMonth(month);
         // Notify parent component about the change
         onDateChange(selectedYear, month, selectedDay);
     };
 
-    const handleDayChange = (day) => {
+    const handleDayChange = (day: string) => {
         setSelectedDay(day);
         // Notify parent component about the change
         onDateChange(selectedYear, selectedMonth, day);

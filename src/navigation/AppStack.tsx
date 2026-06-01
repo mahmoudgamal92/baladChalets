@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Splash from "../screens/Splash";
 import VersionUpgrade from "../screens/VersionUpgrade";
-import Home from "../screens/Index";
+import Home from "../screens/Home";
 
 
 
@@ -22,14 +22,14 @@ export type AppStackParamList = {
   Splash: undefined;
   TabNavigator: undefined;
   VersionUpgrade: undefined;
-  ChaletsAndFarmsResult: undefined;
-  ChaletsAndFarmsPreOrder: undefined;
-  ChaletsAndFarmsConfirm: undefined;
-  ChaletsAndFarmsNewList: undefined;
-  MonthSelection: undefined;
-  Offers: undefined;
-  NewPreOrder: undefined;
-  NewChaletsAndFarmsConfirm: undefined;
+  ChaletsAndFarmsResult: { chalets: any; filters: any };
+  ChaletsAndFarmsPreOrder: { item: any; filters: any };
+  ChaletsAndFarmsConfirm: { order_info: any; chalet: any; filters: any };
+  ChaletsAndFarmsNewList: { chalets: any };
+  MonthSelection: { chalet: any };
+  Offers: { chalet: any; offers: any };
+  NewPreOrder: { chalet: any; offer: any; date: any };
+  NewChaletsAndFarmsConfirm: { order_info: any; chalet: any; offer: any; date: any };
 };
 
 const Stack = createStackNavigator<AppStackParamList>();

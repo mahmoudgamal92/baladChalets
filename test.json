@@ -1,0 +1,24 @@
+[
+    {
+        "bannerName": "1da128ea-c106-4a61-ab7e-1558ae05a041photo_٢٠٢٥-٠٥-٢٥_١٢-٥٤-١٠.jpg",
+        "displayOrder": 0,
+        "id": 12,
+        "isActive": true
+    },
+    {
+        "bannerName": "5405dc57-1927-4d4b-b442-691dac4a5fa6IMG-20250329-WA0669.jpg",
+        "displayOrder": 2,
+        "id": 13,
+        "isActive": true
+    },
+    {
+        "bannerName": "85c605dd-897f-492b-a431-25902d24fb34DSC09953.jpg",
+        "displayOrder": 3,
+        "id": 14,
+        "isActive": true
+    }
+]
+{
+    "baseURL": "https://services.alhajz-alsarea.com/api/",
+    "mediaURL": "https://alhajz-alsarea.com/ImagesRepository/"
+}
